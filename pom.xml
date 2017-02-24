@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<parent>
 		<groupId>org.sonatype.oss</groupId>
 		<artifactId>oss-parent</artifactId>
 		<version>7</version>
 	</parent>
-	
+
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.keyholesoftware</groupId>
@@ -17,10 +18,12 @@
 	<packaging>jar</packaging>
 
 	<url>http://keyholesoftware.com</url>
+
 	<organization>
 		<url>http://keyholesoftware.com</url>
 		<name>Keyhole Software</name>
 	</organization>
+
 	<licenses>
 		<license>
 			<name>The Apache Software License, Version 2.0</name>
@@ -28,12 +31,12 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
-	<scm>
-		<url>https://github.com/in-the-keyhole/khs-spring-boot-api-stats-starter</url>
-		<connection>scm:git:https://github.com/in-the-keyhole/khs-spring-boot-api-stats-starter.git</connection>
-		<developerConnection>scm:git:https://github.com/in-the-keyhole/khs-spring-boot-api-stats-starter.git</developerConnection>
-	</scm>
 
+	<scm>
+		<url>https://github.com/in-the-keyhole/khs-spring-boot-api-statistics-starter</url>
+		<connection>scm:git:https://github.com/in-the-keyhole/khs-spring-boot-api-statistics-starter.git</connection>
+		<developerConnection>scm:git:https://github.com/in-the-keyhole/khs-spring-boot-api-statistics-starter.git</developerConnection>
+	</scm>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -70,6 +73,8 @@
 	</dependencies>
 
 	<build>
+		<finalName>khs-spring-boot-api-statistics-starter</finalName>
+
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -105,7 +110,7 @@
 					<source>1.8</source>
 					<target>1.8</target>
 				</configuration>
-			</plugin>	
+			</plugin>
 		</plugins>
 	</build>
 </project>
