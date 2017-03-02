@@ -5,7 +5,7 @@
 
 	<groupId>com.keyholesoftware</groupId>
 	<artifactId>khs-spring-boot-api-statistics-starter</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.1</version>
 
 	<description>A spring boot starter configuration for publishing API statistics.</description>
 	<packaging>jar</packaging>
