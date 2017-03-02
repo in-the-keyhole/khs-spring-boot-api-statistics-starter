@@ -7,6 +7,7 @@
 	<artifactId>khs-spring-boot-api-statistics-starter</artifactId>
 	<version>1.0.1</version>
 
+	<name>Spring Boot Starter - API Statistics</name>
 	<description>A spring boot starter configuration for publishing API statistics.</description>
 	<packaging>jar</packaging>
 
