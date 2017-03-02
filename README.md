@@ -8,7 +8,7 @@ Add this dependency to your pom.xml:
 	<dependency>
 		<groupId>com.keyholesoftware</groupId>
 		<artifactId>khs-spring-api-statistics-starter</artifactId>
-		<version>1.0.0</version>
+		<version>1.0.1</version>
 	</dependency>	
 
 Annotate your Spring Boot main class:
@@ -24,9 +24,9 @@ Annotate your Spring Boot main class:
 
 Add configuration in application.yml:
 
-api:
-  statistics:
-    name: someName
-    pattern-match: /.*
-    publish-url: http://someHost/someApi
-    token: someSecurityToken
+	api:
+	  statistics:
+	    name: someName
+	    pattern-match: /.*
+	    publish-url: http://someHost/someApi
+	    token: someSecurityToken
