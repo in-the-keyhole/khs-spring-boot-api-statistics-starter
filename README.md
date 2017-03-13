@@ -46,7 +46,7 @@ Example Configuration(s):
 	    publish-url: http://beta.grokola.com/sherpa/api/stats/308
 	    token: 9x019749-XXXX-XXXX-XXXX-38090a0ea9g9
 
-Example Payload(s):
+Example Payload:
 ------------
 
 	[
