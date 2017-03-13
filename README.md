@@ -28,7 +28,7 @@ Annotate your Spring Boot main class:
 	}
 	
 Configurable Properties:
-	api.statistics.name - The name under which to publish the statistics
+	api.statistics.name - The name under which to group the published statistics
 	api.statistics.pattern-match: A regex expression to filter API's in/out
 	api.statistics.publish-url: The url to POST the statistics to
 	api.statistics.token: A security token to prevent unwanted clients from POSTing stats to the publish-url
@@ -46,3 +46,27 @@ Example Configuration(s):
 	    publish-url: http://beta.grokola.com/sherpa/api/stats/308
 	    token: 9x019749-XXXX-XXXX-XXXX-38090a0ea9g9
 
+Example Payload(s):
+------------
+
+[
+  {
+    uri: "/api/projects/1",
+    method: "GET",
+    duration: "19",
+    service: "apigateway"
+  },
+  {
+    uri: "/api/projects/1",
+    method: "GET",
+    duration: "16",
+    service: "apigateway"
+  },
+  {
+    uri: "/api/projects/2",
+    method: "GET",
+    duration: "14",
+    service: "apigateway"
+  }
+  ...
+]
