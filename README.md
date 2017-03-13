@@ -1,5 +1,10 @@
 # khs-spring-boot-api-statistics-starter
-A Spring Boot starter for publishing api statistics
+
+A Spring Boot starter for publishing api statistics.
+
+Description
+------------
+This Spring Boot starter can be used to POST API usage statistics to a publishing target (url) on a configurable interval.  The body of the request will be a JSON array of statistics (see schema below), and a security token can be applied to ensure that only authorized clients have access.
 
 Installation
 ------------
@@ -21,12 +26,23 @@ Annotate your Spring Boot main class:
 			SpringApplication.run(MySpringBootApp.class, args);
 		}
 	}
+	
+Configurable Properties:
+	api.statistics.name - The name under which to publish the statistics
+	api.statistics.pattern-match: A regex expression to filter API's in/out
+	api.statistics.publish-url: The url to POST the statistics to
+	api.statistics.token: A security token to prevent unwanted clients from POSTing stats to the publish-url
 
-Add configuration in application.yml:
+
+Example Configuration(s):
+------------
+
+(i.e. application.yml)
 
 	api:
 	  statistics:
-	    name: someName
-	    pattern-match: /.*
-	    publish-url: http://someHost/someApi
-	    token: someSecurityToken
+	    name: apigateway
+	    pattern-match: /api/.*
+	    publish-url: http://beta.grokola.com/sherpa/api/stats/308
+	    token: 9x019749-XXXX-XXXX-XXXX-38090a0ea9g9
+
