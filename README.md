@@ -49,24 +49,24 @@ Example Configuration(s):
 Example Payload(s):
 ------------
 
-[
-  {
-    uri: "/api/projects/1",
-    method: "GET",
-    duration: "19",
-    service: "apigateway"
-  },
-  {
-    uri: "/api/projects/1",
-    method: "GET",
-    duration: "16",
-    service: "apigateway"
-  },
-  {
-    uri: "/api/projects/2",
-    method: "GET",
-    duration: "14",
-    service: "apigateway"
-  }
-  ...
-]
+	[
+	  {
+	    uri: "/api/projects/1",
+	    method: "GET",
+	    duration: "19",
+	    service: "apigateway"
+	  },
+	  {
+	    uri: "/api/projects/1",
+	    method: "GET",
+	    duration: "16",
+	    service: "apigateway"
+	  },
+	  {
+	    uri: "/api/projects/2",
+	    method: "GET",
+	    duration: "14",
+	    service: "apigateway"
+	  }
+	  ...
+	]
